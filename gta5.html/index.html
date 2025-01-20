@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registan School</title>
+    <link data-default-icon="https://img.icons8.com/?size=100&id=hGzLo79r7KzD&format=png&color=000000" rel="icon" href="https://img.icons8.com/?size=100&id=hGzLo79r7KzD&format=png&color=000000">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header_contanier{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1400px;
+            margin: 0px auto;
+        }
+        .header_menu{
+            display: flex;
+            align-items: center;
+        }
+        .header_item{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600px;
+        }
+          .header_item{
+            margin-left: 40px;
+          }  
+         .header_button{
+            background-color: blue;
+            border-radius: 8px;
+            color: rgb(255, 255, 255);
+            padding: 8px 20px ;
+         }
+        .main_image{
+            width: 529px;
+            height: 683px;
+            border-radius: 8px;
+            background-color: #ccc; 
+            margin-bottom: 0px;
+        }
+            .main_contanier{
+                background-color: #021934;
+                color: #fff;
+                width: 1400px;
+                margin: 0px auto;
+                border-radius: 8px;
+                padding: 50px 200px ;
+                display: flex;
+                justify-content: space-between;
+            }
+            .main_content{
+                width: 650px;
+            }
+            .main_title{
+                font-size: 63px;
+                font-weight: 650;
+                line-height: 88px;
+                margin-bottom: 24px;
+
+            }
+            .main_subtittle{
+                margin-bottom: 90px;
+            }
+            .main_button{
+                background-color: blue;
+                display: inline;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #fff;
+                padding: 12px 24px;
+
+            }
+            .main_items{
+                margin-top: 90px;
+                font-weight: 600;
+                line-height: 28px;
+                font-size: 16px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .study_container{
+                padding: 50px 0px;
+                width: 1400px;
+                margin: 0px auto;
+                
+            }
+            .study_title{
+                font-weight: 700;
+                font-size: 48px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            .study_items{
+                
+                display: flex;
+                justify-content: center;
+                color: #aaa;
+                border-radius: 12px;
+
+            }
+            .study_item{
+                padding: 12px 72px;
+            }
+            .activ{
+                background-color: rgb(4, 4, 98);
+                color: white;
+                border-radius: 8px;
+            }
+            .study_cards{
+                display: flex;
+                justify-content: space-between;
+                margin: 30px 0px;
+            }
+            .study_card{
+                width: 290px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius: 8px;
+                padding: 16px;
+            }
+            .study_card_img{
+                background-color: #aaa;
+                width: 100%;
+                height: 208px;
+                border-radius: 8px;
+                
+            }
+            .study_card_button{
+                display: flex;
+                justify-content: center;
+                margin-top: -15px;
+
+            }
+            .study_button_text{
+                background-color: blue;
+                display: inline;
+                color: #fff;
+                padding: 4px 24px;
+                border-radius: 8px;
+
+            }
+            .study_card_title{
+                margin-top: 20px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .subject_container{
+                width: 1400px;
+                margin: 0px auto;
+            }
+            .subject_column{
+                display: flex;
+                justify-content: space-between;
+                margin: 30px 0px;
+            }
+
+
+            .subject_title{
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 64px;
+                margin-bottom: 40px;
+            }
+            .subject_box{
+                background-color: #333;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                width: 296px;
+                height: 350px;
+                border-radius: 8px;
+            }
+            .subject_name{
+                font-size: 24px;
+                font-weight: 600;
+                margin: 30px 0px;
+                color: white;
+            }
+
+            .info_container{
+                width: 1400px;
+                margin: 0px auto;
+                margin-top: 160px;
+            }
+            .info_column{
+                display: flex;
+                justify-content: space-evenly;
+
+            }
+            .info_box{
+                text-align: center;
+            }
+            .info_img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #333;
+            }
+            .info_num{
+                font-weight: 500;
+                font-size: 28px;
+                text-align: center;
+            }
+            .info_text{
+                text-align: center;
+
+            }
+            .mentor_container{
+                margin-bottom: 10;
+                width: 1400px;
+                margin: 0px auto;
+                margin-top: 160px;
+                display: flex;
+            }
+            .mentor_img{
+                width: 606px;
+                height: 557px;
+                background-color: #333;
+                margin-bottom: 30px;
+            }
+            .mentor_text{
+                width: 585px;
+                margin-left: 80px;
+                height: 108px;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            .mentor_title{
+                font-size: 32px;
+                font-weight: 700;
+                margin-top: 50px;
+            }
+            .mentor_subtitle{
+                margin-top: 24px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .mentor_bottom{
+                background-color: deeppink;
+                padding: 15px 30px;
+                
+                border-radius: 10px;
+                color: #fff;
+                display: inline-flex;
+                margin: 12px;
+            }
+            
+
+
+            
+            .none_container{
+                margin-bottom: 10;
+                width: 1400px;
+                margin: 0px auto;
+                margin-top: 160px;
+                display: flex;
+            }
+            .none_img{
+                width: 360px;
+                height: 377px;
+                background-color: #333;
+                margin-bottom: 30px;
+            }
+            .none_text{
+                width: 585px;
+                margin-left: 80px;
+                height: 108px;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            .none_title{
+                margin-top: 50px;
+            }
+            .none_subtitle{
+                margin-top: 70px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                
+            }
+            .none_bottom{
+                background-color: deeppink;
+                padding: 15px 30px;
+                
+                border-radius: 10px;
+                color: #fff;
+                display: inline-flex;
+                margin: 12px;
+            }
+
+            .none_man{
+                height: 32px;
+                line-height: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                font-weight: 100;
+            }
+
+            .none_yang{
+                margin-top: 20px;
+            }
+
+
+
+
+
+            .com_title{
+                font-size: 48px;
+                color: darkblue;
+                text-align: center;
+                
+            }
+            .com_logo{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-right: 200px;
+            }
+            .com_img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .com_icons{
+                margin-left: 70px;
+            }
+
+
+
+            .blog_button{
+                color: #F72585;
+                margin-top: 20px;
+            }
+            .blog_cont{
+                margin-left: 350px;
+                width: 400px;
+            }
+            .blog_img{
+                background-color: #aaa;
+                width: 368px;
+                height: 240px;
+                border-radius: 10px;
+            }
+            .blog_name{
+                color: #021934;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 50px;
+                font-weight: 700px;
+                margin-bottom: 20px;
+                margin-top: 30PX;
+
+            }
+            .blog_title{
+                color: #CCCCCC;
+                font-size: 15px;
+                width: 380px;
+                line-height: 27px;
+            }
+            .blog_text{
+                color: #021934;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 32px;
+            }
+            .blog_ime{
+                font-weight: 400;
+            }
+            .blog_month{
+                display: flex;
+                color: #aaa;
+            }
+            .blog_box{
+                margin-right: 30px;
+                padding: 8px;
+            }
+            .blog_box1{
+                margin-right: 30px;
+                padding: 8px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            }
+            .blog_column{
+                display: flex;
+                width: 400px;
+            }
+
+
+
+            
+            
+            .end_box{
+            display: flex;
+            flex-direction: column;
+        }
+        .end_column{
+            display: flex;
+            justify-content: space-around;
+        }
+        .begin_text{
+            width: 500px;
+            margin-top: 36px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+        }
+        .end_begin{
+            margin: 80px 120px  0px 0px;
+        }
+        .end_end{
+            display: flex;
+            font-size: 16px;
+            line-height: 27px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            margin-top: 139px;
+        }
+        .end_begin1{
+            display: flex;
+        }
+        .end_about{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px 109px 147px 0px;
+        }
+        .end_support{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px 104px 120px 0px;
+        }
+        .end_company{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px 103px 120px 0px;
+        }
+        .about_title{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 8px;
+        }
+        .support_title{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 8px;
+        }
+        .companys_title{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 8px;
+        }
+        .about_items{
+            font-size: 16px;
+            line-height: 32px;
+        }
+        .support_item{
+            font-size: 16px;
+            line-height: 32px;
+        }
+        .company_items{
+            font-size: 16px;
+            line-height: 32px;
+        }
+        .end_made{
+            text-align: end;
+        }
+        .end_2{
+            margin: 0px 0px 0px 40px ;
+        }
+        .end_container{
+            width: 1400px;
+            margin: 0px auto;
+            background-color: #021934;
+            color: #fff;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_contanier">
+        <div class="header_logo"><img width="80px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_i-AfQlIBM2B_1ngT7dR2l4pVCApOp_NA1A&s" alt=""></div>
+        <div class="header_menu">
+        <div class="header_item">Maktab haqida</div>
+        <div class="header_item">O`quv dasturi</div>
+        <div class="header_item">Qabul-2024</div>
+        <div class="header_item">O`quvchilar jamoasi</div>
+        <div class="header_item header_button">Ariza yuborish</div>
+        </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_contanier">
+            <div class="main_content">
+              <div class="main_title">2024-2025 oquv yili uchun qabul boshlandi</div>
+              <div class="main_subtittle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nostrum, adipisci minima obcaecati repellendus quaerat eaque ut quos? Magni dolores mollitia corporis eius adipisci sunt suscipit corrupti cumque consectetur perferendis.</div>
+              <div class="main_button">Ariza yuborish</div>
+              <div class="main_items">
+              <div class="main_item">zamonaviy ariza</div>
+              <div class="main_item">zamonaviy ariza</div>
+              <div class="main_item">zamonaviy ariza</div>
+              </div>
+            </div>
+            <div class="main_image"></div>
+        </div>
+    </div>
+    <div class="study">
+        <div class="study_container">
+            <div class="study_title">O'quv dasturi</div>
+            <div class="study_items">
+                <div class="study_item activ">1-4 CLASS</div>
+                <div class="study_item">5-8 CLASS</div>
+                <div class="study_item">9-11 CLASS</div>
+            </div>
+            <div class="study_cards">
+                <div class="study_card">
+                    <div class="study_card_img"></div>
+                    <div class="study_card_texts">
+                        <div class="study_card_button">
+                            <div class="study_button_text">Matematika</div></div>
+                            <div class="study_card_title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, sunt.</div>
+                            <div class="study_card_subtitle">Lorem, ipsum.</div>
+                    </div>
+                </div>
+                <div class="study_card">
+                    <div class="study_card_img"></div>
+                    <div class="study_card_texts">
+                        <div class="study_card_button">
+                            <div class="study_button_text">Matematika</div></div>
+                            <div class="study_card_title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, sunt.</div>
+                            <div class="study_card_subtitle">Lorem, ipsum.</div>
+                    </div>
+                </div><div class="study_card">
+                    <div class="study_card_img"></div>
+                    <div class="study_card_texts">
+                        <div class="study_card_button">
+                            <div class="study_button_text">Matematika</div></div>
+                            <div class="study_card_title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, sunt.</div>
+                            <div class="study_card_subtitle">Lorem, ipsum.</div>
+                    </div>
+                </div><div class="study_card">
+                    <div class="study_card_img"></div>
+                    <div class="study_card_texts">
+                        <div class="study_card_button">
+                            <div class="study_button_text">Matematika</div></div>
+                            <div class="study_card_title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, sunt.</div>
+                            <div class="study_card_subtitle">Lorem, ipsum.</div>
+                    </div>
+                </div>
+            </div>            <div class="study_cards">
+                <div class="study_card">
+                    <div class="study_card_img"></div>
+                    <div class="study_card_texts">
+                        <div class="study_card_button">
+                            <div class="study_button_text">Matematika</div></div>
+                            <div class="study_card_title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, sunt.</div>
+                            <div class="study_card_subtitle">Lorem, ipsum.</div>
+                    </div>
+                </div>
+                <div class="study_card">
+                    <div class="study_card_img"></div>
+                    <div class="study_card_texts">
+                        <div class="study_card_button">
+                            <div class="study_button_text">Matematika</div></div>
+                            <div class="study_card_title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, sunt.</div>
+                            <div class="study_card_subtitle">Lorem, ipsum.</div>
+                    </div>
+                </div><div class="study_card">
+                    <div class="study_card_img"></div>
+                    <div class="study_card_texts">
+                        <div class="study_card_button">
+                            <div class="study_button_text">Matematika</div></div>
+                            <div class="study_card_title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, sunt.</div>
+                            <div class="study_card_subtitle">Lorem, ipsum.</div>
+                    </div>
+                </div><div class="study_card">
+                    <div class="study_card_img"></div>
+                    <div class="study_card_texts">
+                        <div class="study_card_button">
+                            <div class="study_button_text">Matematika</div></div>
+                            <div class="study_card_title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, sunt.</div>
+                            <div class="study_card_subtitle">Lorem, ipsum.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subject">
+        <div class="subject_container">
+            <div class="subject_title">chuqurilishtirilshgan</div>
+            <div class="subject_column">
+                <div class="subject_box">
+                    <div class="subject_name">tarbiya</div>
+                </div>
+                <div class="subject_box">
+                    <div class="subject_name">Ingliz tili</div>
+                </div>
+                <div class="subject_box">
+                    <div class="subject_name">IELTS</div>
+                </div>
+                <div class="subject_box">
+                    <div class="subject_name">SAT</div>
+                </div>
+            </div>
+            <div class="subject_column">
+                <div class="subject_box">
+                    <div class="subject_name">Arab tili</div>
+                </div>
+                <div class="subject_box">
+                    <div class="subject_name">Matematika</div>
+                </div>
+                <div class="subject_box">
+                    <div class="subject_name">Sport</div>
+                </div>
+                <div class="subject_box">
+                    <div class="subject_name">Rus tili</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="info_container">
+            <div class="info_column">
+                <div class="info_box">
+                    <div class="info_img"></div>
+                    <div class="info_num">20+</div>
+                    <div class="info_text">Fanlar</div>
+                </div>
+                <div class="info_box">
+                    <div class="info_img"></div>
+                    <div class="info_num">70+</div>
+                    <div class="info_text">Ustozlar</div>
+                </div>
+                <div class="info_box">
+                    <div class="info_img"></div>
+                    <div class="info_num">500+</div>
+                    <div class="info_text">oquvchilar</div>
+                </div>
+                <div class="info_box">
+                    <div class="info_img"></div>
+                    <div class="info_num">2</div>
+                    <div class="info_text">Filial</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mentor">
+        <div class="mentor_container">
+            <div class="mentor_img"></div>
+            <div class="mentor_text">
+                    <div class="mentor_title">Become an mentor </div>
+                    <div class="mentor_subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione perspiciatis ad vel! Animi, ipsum cum dignissimos officia aliquid placeat ipsam, optio ad, amet consectetur ullam. Vero, architecto ipsam expedita repellendus quaerat reprehenderit deserunt quibusdam ad nostrum culpa! Ducimus obcaecati tenetur nam quod!</div>
+                    <div class="mentor_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt eius vel sapiente debitis nostrum atque, quos praesentium magni ex sit! Incidunt facere laudantium odio soluta laboriosam molestias repellendus voluptate eum blanditiis, temporibus ea repellat natus quisquam obcaecati velit neque in iure.</div>
+                    <div class="mentor_bottom">start talking</div>
+                </div>
+        </div>
+    </div>
+    <div class="none">
+        <div class="none_container">
+            <div class="none_img"></div>
+            <div class="none_text">
+                    <div class="none_subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione perspiciatis ad vel! Animi, ipsum cum dignissimos officia aliquid placeat ipsam, optio ad, amet consectetur ullam. Vero, architecto ipsam expedita repellendus quaerat reprehenderit deserunt quibusdam ad nostrum culpa! Ducimus obcaecati tenetur nam quod!</div>
+                    <div class="none_man">KecekArif</div>
+                    <div class="none_yang">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                </div>
+        </div>
+    </div>
+    <div class="com">
+        <div class="com_cont">
+            <div class="com_title">Trusted by copmpany</div>
+            <div class="com_logo">
+                <div class="com_img"></div>
+                <div class="com_icons"><img src="./icons8-adidas-96.png" alt=""></div>
+                <div class="com_icons"><img src="./icons8-air-jordan-100.png" alt=""></div>
+                <div class="com_icons"><img src="./icons8-figma-96.png" alt=""></div>
+                <div class="com_icons"><img src="./icons8-gucci-an-italian-luxury-brand-of-fashion-and-leather-goods-96.png" alt=""></div>
+            </div>
+            <div class="com_img">
+                <div class="com_icons"><img src="./icons8-nike-96.png" alt=""></div>
+                <div class="com_icons"><img src="./icons8-samsung-96.png" alt=""></div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="blog">
+        <div class="blog_cont">
+            <div class="blog_name">The Latest Blog</div>
+            <div class="blog_column">
+                <div class="blog_box1">
+                    <div class="blog_img"></div>
+                    <div class="blog_month">
+                        <div class="blogt_ime">3, Mei 2021</div>
+                        <div class="blogt_ime">3, Mei 2021</div>
+                    </div>
+                    <div class="blog_text">10 graphic design trends to get you inspired in 2021</div>
+                    <div class="blog_title">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</div>
+                    <div class="blog_button">Read More</div>
+                </div>
+                <div class="blog_box">
+                    <div class="blog_img"></div>
+                    <div class="blog_month">
+                        <div class="blogt_ime">3, Mei 2021</div>
+                        <div class="blogt_ime">3, Mei 2021</div>
+                    </div>
+                    <div class="blog_text">10 graphic design trends to get you inspired in 2021</div>
+                    <div class="blog_title">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</div>
+                    <div class="blog_button">Read More</div>
+                </div>
+                <div class="blog_box">
+                    <div class="blog_img"></div>
+                    <div class="blog_month">
+                        <div class="blogt_ime">3, Mei 2021</div>
+                        <div class="blogt_ime">3, Mei 2021</div>
+                    </div>
+                    <div class="blog_text">10 graphic design trends to get you inspired in 2021</div>
+                    <div class="blog_title">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</div>
+                    <div class="blog_button">Read More</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <div class="end_container">
+            <div class="end_column">
+                <div class="end_box">
+                    <div class="end_begin">
+                        <div class="begin_logo"><img src="Logo (2).png" alt=""></div>
+                        <div class="begin_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultrices. Imperdiet mus urna egestas at tellus. </div>
+                </div>
+                <div class="end_end">
+                    <div class="end_1">Privacy Policy</div>
+                    <div class="end_2">Terms and Condition</div>
+                </div>
+                </div>
+                <div class="end_box">
+                    <div class="end_begin1">
+                        <div class="end_about">
+                            <div class="about_title">About</div>
+                            <div class="about_items">About us</div>
+                            <div class="about_items">Courses</div>
+                            <div class="about_items">Mentor</div>
+                            <div class="about_items">Contact Us</div>
+                        </div>
+                        <div class="end_support">
+                            <div class="support_title">Support</div>
+                            <div class="support_item">Careers</div>
+                            <div class="support_item">Help & Support</div>
+                            <div class="support_item">Blog</div>
+                        </div>
+                        <div class="end_company">
+                            <div class="companys_title">Company</div>
+                            <div class="company_items">Privacy Policy</div>
+                            <div class="company_items">Terms of Service</div>
+                            <div class="company_items">Code of Conduct</div>
+                        </div>
+                        
+                    </div>
+                    <div class="end_made">a.muydinov123@gmail.com. We are the best students🤗</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
